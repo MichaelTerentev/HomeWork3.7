@@ -7,6 +7,6 @@ public class Main {
 		samsungPhones.forEach(p -> System.out.println(p.toString()));
 		//2
 		System.out.println("_______________\n");
-		phones.stream().sorted().distinct().forEach(p -> System.out.println(p.toString()));
+		phones.stream().sorted().forEach(p -> System.out.println(p.toString()));
     }
 }
