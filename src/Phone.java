@@ -7,13 +7,7 @@ public class Phone implements Comparable<Phone> {
 		this.model = model;
 	}
 	public int compareTo(Phone p) {
-		if(price > p.price) {
-			return 1;
-		}
-		else if(price < p.price) {
-			return -1;
-		}
-		else return 0;
+		return price - p.price;
 	}
 	public int getPrice() {
 		return price;
